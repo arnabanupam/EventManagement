@@ -32,11 +32,14 @@ Configure MongoDB connection in application.properties.
 run on bash:
 mvn spring-boot:run
 
-**4.API Endpoints**
-Method    Endpoint	                    Description
-POST      /signup	                   Register a new user
-POST	    /login	                   Login and get a JWT
-POST	    /events	                   Create a new event (JWT required)
-GET	      /events	                   Fetch all events
-POST	    /events/:id/register	     Register for an event (JWT required)
-DELETE	  /events/:id/register	     Cancel registration (JWT required)
+## API Endpoints
+
+| Method  | Endpoint                  | Description                      |
+|---------|---------------------------|----------------------------------|
+| `POST`  | `/signup`                 | Register a new user             |
+| `POST`  | `/login`                  | Login and get a JWT             |
+| `POST`  | `/events`                 | Create a new event (JWT required) |
+| `GET`   | `/events`                 | Fetch all events                |
+| `POST`  | `/events/:id/register`    | Register for an event (JWT required) |
+| `DELETE` | `/events/:id/register`   | Cancel registration (JWT required) |
+
