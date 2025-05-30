@@ -18,19 +18,41 @@ This is a backend API built with **Spring Boot** for managing events, including 
 - Git
 
 ### Steps
-**1. Clone the repository:**
-   run on bash:
-   git clone https://github.com/arnabanupam/EventManagement.git
-   cd EventManagement
-   
-**2. Install dependencies:**
-run on bash:
-mvn clean install
-Configure MongoDB connection in application.properties.
 
-**3. Run the application:**
-run on bash:
-mvn spring-boot:run
+Follow these steps to set up and run the Event Management application:
+
+1. **Clone the repository**
+
+    ```bash
+    git clone https://github.com/arnabanupam/EventManagement.git
+    cd EventManagement
+    ```
+
+2. **Configure MongoDB**
+
+    Edit the `src/main/resources/application.properties` file to set your MongoDB connection:
+
+    ```properties
+    spring.data.mongodb.uri = mongodb://localhost:27017/event_management
+    spring.data.mongodb.database = event_management
+    ```
+
+3. **Install dependencies**
+
+    Run the following command to install all dependencies:
+
+    ```bash
+    mvn clean install
+    ```
+
+4. **Run the application**
+
+    Start the Spring Boot application:
+
+    ```bash
+    mvn spring-boot:run
+    ```
+
 
 ## API Endpoints
 
